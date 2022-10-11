@@ -4,20 +4,20 @@
     background-image: linear-gradient(
         to bottom,
         $main-background-color 16%,
-        $secondari-background-color 16%);     
+        $secondary-background-color 16%);     
         
     @media screen and(min-width: 768px) {
         background-image: linear-gradient(
             to bottom,
             $main-background-color 50%,
-            $secondari-background-color 50%);           
+            $secondary-background-color 50%);           
     }
     
     @media screen and(min-width: 1200px) {
         background-image: linear-gradient(
             to bottom,
             $main-background-color 22%,
-            $secondari-background-color 22%);           
+            $secondary-background-color 22%);           
     }
 }
 
