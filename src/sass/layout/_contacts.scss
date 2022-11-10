@@ -330,26 +330,26 @@
     height: 199px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../images/contacts/map.jpg');
+    background-image: url('../images/contacts/map.webp');
 
     @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('../images/contacts/map@2x.jpg');
+        background-image: url('../images/contacts/map@2x.webp');
     }
 
     margin-bottom: 24px;
 
     @include media-screen(768px) {
         height: 260px;
-        background-image: url('../images/contacts/big_map.jpg');
+        background-image: url('../images/contacts/big_map.webp');
 
         @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: url('../images/contacts/big_map@2x.jpg');
+            background-image: url('../images/contacts/big_map@2x.webp');
         }
 
         margin-bottom: 32px;
