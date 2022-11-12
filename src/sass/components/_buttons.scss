@@ -62,7 +62,7 @@ button {
     outline: none;
     margin-top: 16px;
 
-    transition: color $main-animation, background $main-animation;
+    transition: color $main-animation, background-color $main-animation;
 
     &:hover {
         border: none;
