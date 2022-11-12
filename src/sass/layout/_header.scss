@@ -172,7 +172,7 @@ nav {
 
     transition: color $main-animation, background-color $main-animation;
 
-    cursor: url('../images/cursor/cursor.svg'), auto;
+    cursor: url('../images/cursor.svg'), auto;
 
     &:hover {
         background-color: $hover-color;
@@ -216,7 +216,7 @@ nav {
 
     transition: color $main-animation, background-color $main-animation;
 
-    cursor: url('../images/cursor/cursor.svg'), auto;
+    cursor: url('../images/cursor.svg'), auto;
 
     &:hover {
         background-color: $hover-color;
@@ -544,13 +544,13 @@ nav {
         background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
             #aec6a5;
         box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-        background-image: url(../images/hero-header/ice-cream-icon.png);
+        background-image: url(../images/header/ice-cream-icon.png);
         background-position: 0 -7px;
         background-repeat: no-repeat;
         background-size: cover;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/hero-header/ice-cream-icon@2x.png);
+            background-image: url(../images/header/ice-cream-icon@2x.png);
         }
     }
 
@@ -577,13 +577,13 @@ nav {
 
         background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #efd478;
         box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-        background-image: url(../images/hero-header/ice-coffee-icon.png);
+        background-image: url(../images/header/ice-coffee-icon.png);
         background-position: 0 -7px;
         background-repeat: no-repeat;
         background-size: cover;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/hero-header/ice-coffee-icon@2x.png);
+            background-image: url(../images/header/ice-coffee-icon@2x.png);
         }
     }
 
@@ -610,13 +610,13 @@ nav {
 
         background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)) #d6936d;
         box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
-        background-image: url(../images/hero-header/ice-milkshake-icon.png);
+        background-image: url(../images/header/ice-milkshake-icon.png);
         background-position: 0 -7px;
         background-repeat: no-repeat;
         background-size: cover;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/hero-header/ice-milkshake-icon@2x.png);
+            background-image: url(../images/header/ice-milkshake-icon@2x.png);
         }
     }
 
@@ -645,7 +645,7 @@ nav {
 
     transition: opacity $main-animation;
 
-    cursor: url('../images/cursor/cursor.svg'), auto;
+    cursor: url('../images/cursor.svg'), auto;
 }
 
 .isShowBtn {
@@ -668,7 +668,7 @@ nav {
 
 .hamburger.hamburger--elastic {
     margin-left: auto;
-    cursor: url('../images/cursor/cursor.svg'), auto;
+    cursor: url('../images/cursor.svg'), auto;
     z-index: 3;
     outline: transparent;
 
