@@ -5,7 +5,7 @@
             <path d="m4 2 4.948 4L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
         </symbol>
-        <!-- arrow on hero -->
+        <!-- arrows on hero -->
         <symbol id="icon-hero-arrow-foc" viewBox="0 0 69 32">
             <path
                 d="M68.08 17.413c.361-.362.585-.861.585-1.413s-.224-1.052-.585-1.413L55.353 1.858a2.001 2.001 0 0 0-2.83 2.83l11.316 11.313-11.315 11.313a2.001 2.001 0 0 0 2.83 2.83l12.728-12.728zM0 18h66.667v-4H0v4z" />
@@ -28,7 +28,7 @@
             <path
                 d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2l105.4 105.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
         </symbol>
-        <!-- section "Products" arrow -->
+        <!-- section "Products" arrows -->
         <symbol id="icon-arrow-def" viewBox="0 0 41 16" fill="none">
             <path
                 d="M40.707 8.707a1 1 0 0 0 0-1.414L34.343.929a1 1 0 1 0-1.414 1.414L38.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM0 9h40V7H0v2Z"
@@ -44,7 +44,7 @@
                 d="M51.06 13.06a1.5 1.5 0 0 0 0-2.12l-9.545-9.547a1.5 1.5 0 1 0-2.122 2.122L47.88 12l-8.486 8.485a1.5 1.5 0 1 0 2.122 2.122l9.546-9.546ZM0 13.5h50v-3H0v3Z"
                 fill="#131313" />
         </symbol>
-        <!-- Social links icons -->
+        <!-- icons for social links -->
         <symbol id="icon-facebook" viewBox="0 0 31 32">
             <path fill="#f8d24e" style="fill:var(--color1, #f8d24e)"
                 d="M15.515 31.948c8.569 0 15.515-6.948 15.515-15.519S24.084.91 15.515.91 0 7.858 0 16.429s6.946 15.519 15.515 15.519z" />
