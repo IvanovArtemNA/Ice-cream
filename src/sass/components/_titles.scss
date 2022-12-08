@@ -14,8 +14,7 @@
 
 .title__about--topic {
     margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 
     font-family: 'Seymour One';
     font-style: normal;
@@ -35,12 +34,13 @@
 
 .title {
     font-family: $font-family-secondary;
-    color: $text-color-light;
     font-weight: 400;
     font-size: 30px;
     line-height: calc(38 / 30);
     text-align: center;
     text-transform: uppercase;
+
+    color: $text-color-light;
 
     @media screen and (min-width: 768px) {
         font-size: 34px;
@@ -62,11 +62,12 @@
     margin-bottom: 12px;
 
     font-family: $font-family-main;
-    color: $text-color-light;
     font-size: 18px;
     line-height: calc(22 / 18);
     text-align: center;
     text-transform: uppercase;
+
+    color: $text-color-light;
 
     @media screen and (min-width: 768px) {
         font-size: 22px;
@@ -81,6 +82,7 @@
 }
 
 .title__label--black {
-    color: $text-color-dark;
     font-weight: 800;
+
+    color: $text-color-dark;
 }

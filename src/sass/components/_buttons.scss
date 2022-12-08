@@ -11,19 +11,16 @@ button {
 }
 
 .button {
-    font-family: 'Montserrat';
+    display: inline-flex;
+    align-items: center;
+
+    font-family: $font-family-main;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
-    display: inline-flex;
-    align-items: center;
     text-align: center;
-
-    text-decoration: none;
-    font-family: $font-family-main;
-    font-weight: 600;
     line-height: calc(18 / 14);
+    text-decoration: none;
 
     color: #131313;
     background: #f8d24e;
@@ -35,9 +32,9 @@ button {
 }
 
 .botton--transparent {
+    color: $text-color-dark;
     border-color: #f8d24e;
     background-color: transparent;
-    color: $text-color-dark;
     background: $accent-color;
     border-radius: 10px;
 
@@ -50,17 +47,19 @@ button {
 
 .button--about {
     position: relative;
+
     display: flex;
+    align-items: center;
     width: 164px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 12px 34px 12px 34px;
+    margin-top: 16px;
+    margin: 0 auto;
+
     font-size: 14px;
     line-height: 1.28;
-    align-items: center;
+
     border: none;
     outline: none;
-    margin-top: 16px;
 
     transition: color $main-animation, background-color $main-animation;
 
@@ -82,13 +81,15 @@ button {
 }
 
 .button--no-border {
-    border: none;
     padding: 7px 12px;
+
     font-size: 8px;
     line-height: 1.25;
-    background-color: transparent;
     text-decoration: underline;
+
     color: $accent-color;
+    border: none;
+    background-color: transparent;
 
     &:hover {
         color: $hover-color;
@@ -100,11 +101,13 @@ button {
 }
 
 .button--transparent {
-    border-color: $accent-color;
-    background-color: transparent;
     padding: 7px 12px;
+
     font-size: 8px;
     line-height: 1.25;
+
+    border-color: $accent-color;
+    background-color: transparent;
     border: 2px solid $accent-color;
 
     &:hover {
@@ -117,10 +120,11 @@ button {
 }
 
 .button__burger {
-    border: none;
-    background-color: transparent;
     padding: 0;
     margin-left: auto;
+
+    background-color: transparent;
+    border: none;
     outline: none;
 
     @media screen and (min-width: 1200px) {

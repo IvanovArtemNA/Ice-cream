@@ -1,6 +1,7 @@
 .contacts__section {
-    background-image: linear-gradient(to bottom, transparent 345px, $main-background-color 345px);
     padding-bottom: 39px;
+
+    background-image: linear-gradient(to bottom, transparent 345px, $main-background-color 345px);
 
     @include media-screen(768px) {
         background-image: linear-gradient(
@@ -12,8 +13,9 @@
     }
 
     @include media-screen(1200px) {
-        background-image: linear-gradient(to bottom, transparent 96px, $main-background-color 96px);
         padding-bottom: 120px;
+
+        background-image: linear-gradient(to bottom, transparent 96px, $main-background-color 96px);
     }
 }
 
@@ -23,36 +25,43 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+
     margin-bottom: 32px;
 
     @include media-screen(768px) {
         flex-direction: row;
         gap: 16px;
+
         margin-bottom: 60px;
     }
 
     @include media-screen(1200px) {
         gap: 32px;
+
         margin-bottom: 64px;
     }
 }
 
 .contacts__card {
+    padding: 40px 32px;
     width: 100%;
+
+    @include text-design(500, 12px, calc(22 / 12), 0.04em);
+
     background: $text-color-light;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    padding: 40px 32px;
-    @include text-design(500, 12px, calc(22 / 12), 0.04em);
 
     @include media-screen(768px) {
         padding-left: 24px;
         padding-right: 24px;
+
         @include text-design(500, 14px, calc(26 / 14), 0.04em);
     }
 
     @include media-screen(1200px) {
         padding: 40px;
+
         @include text-design(500, 16px, calc(30 / 16), 0.04em);
     }
 }
@@ -63,15 +72,18 @@
     align-items: center;
     padding-left: 22px;
     padding-right: 22px;
-    background-color: $accent-color;
-    text-transform: uppercase;
-    border-radius: 4px;
     margin-bottom: 20px;
     height: 16px;
 
+    text-transform: uppercase;
+
+    background-color: $accent-color;
+    border-radius: 4px;
+
     @include media-screen(768px) {
-        @include text-design(500, 16px, calc(30 / 16), 0.04em);
         height: auto;
+
+        @include text-design(500, 16px, calc(30 / 16), 0.04em);
     }
 }
 
@@ -80,8 +92,9 @@
 }
 
 .contacts__text--address {
-    color: $products__list-bg-color-3;
     text-decoration: none;
+
+    color: $products__list-bg-color-3;
     outline: none;
 
     transition: color $main-animation;
@@ -100,11 +113,12 @@
     content: '';
     display: block;
     margin: auto;
-    width: 100%;
     height: 0px;
+    width: 100%;
+    margin: 24px 0 24px;
+
     background-color: $contacts__divider-color;
     border: 1px solid $contacts__divider-color;
-    margin: 24px 0 24px;
 
     @include media-screen(768px) {
         margin: 32px 0 32px;
@@ -149,19 +163,21 @@
     width: 196px;
     padding-top: 12px;
     padding-bottom: 12px;
+
     border: none;
     outline: none;
+
     transition: background-color $main-animation, color $main-animation;
 
     &:hover {
-        border: none;
         background-color: $hover-color;
+        border: none;
     }
 
     &:focus {
-        border: none;
         color: $text-color-light;
         background-color: $hover-color;
+        border: none;
     }
 }
 
@@ -171,8 +187,10 @@
     width: 196px;
     padding-top: 12px;
     padding-bottom: 12px;
-    border: 2px solid $accent-color;
+
     background: transparent;
+    border: 2px solid $accent-color;
+
     transition: color $main-animation, border $main-animation;
 
     &:hover {
@@ -180,19 +198,21 @@
     }
 
     &:focus {
-        border-color: $hover-color;
         color: $text-color-light;
+        border-color: $hover-color;
         outline: none;
     }
 }
 
 .contacts__link {
     display: block;
+
     text-decoration: none;
+
     color: $text-color-dark;
+    outline: none;
 
     transition: color $main-animation;
-    outline: none;
 
     &:hover,
     &:focus {
@@ -205,20 +225,25 @@
 .backdrop {
     position: fixed;
     top: 0;
+    z-index: 2;
+
     width: 100%;
     height: 100%;
+
     background-color: rgba(0, 0, 0, 0.2);
-    overflow-y: scroll;
 
     opacity: 1;
-    z-index: 2;
+
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    overflow-y: scroll;
 }
 
 .backdrop {
     &.is-hidden {
-        pointer-events: none;
         opacity: 0;
+
+        pointer-events: none;
     }
 }
 
@@ -232,20 +257,21 @@
 
 .modal_locations,
 .modal_franchise {
-    box-sizing: border-box;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+
+    width: 280px;
     padding: 26px;
 
     background-color: $text-color-light;
     border: 2px solid $accent-color;
     border-radius: 10px;
 
-    width: 280px;
-
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    box-sizing: border-box;
 
     @include media-screen(768px) {
         width: 568px;
@@ -255,15 +281,17 @@
 
 .locations__close-button,
 .franchise__close-button {
-    background-color: transparent;
-    border: none;
     position: absolute;
     top: 8px;
     right: 8px;
-    padding: 0;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
     outline: none;
 
     &:focus {
@@ -279,7 +307,9 @@
 .modal__close-icon {
     width: 16px;
     height: 16px;
+
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover {
         fill: $accent-color;
     }
@@ -292,15 +322,17 @@
 
 .locations__title,
 .franchise__title {
-    font-family: $font-family-secondary;
-    @include text-design(400, 16px, calc(24 / 16), 0.04em);
     margin: 0 auto;
-    text-align: center;
     margin-bottom: 20px;
 
+    font-family: $font-family-secondary;
+    @include text-design(400, 16px, calc(24 / 16), 0.04em);
+    text-align: center;
+
     @include media-screen(768px) {
-        @include text-design(400, 20px, calc(28 / 20), 0.04em);
         width: 322px;
+
+        @include text-design(400, 20px, calc(28 / 20), 0.04em);
     }
 }
 
@@ -317,8 +349,9 @@
 }
 
 .franchise__text {
-    @include text-design(400, 14px, calc(20 / 14), 0.04em);
     margin-bottom: 24px;
+
+    @include text-design(400, 14px, calc(20 / 14), 0.04em);
 
     @include media-screen(768px) {
         margin-bottom: 32px;
@@ -328,6 +361,7 @@
 .locations__map {
     width: 100%;
     height: 199px;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../images/contacts/map.webp');
@@ -361,21 +395,24 @@
     margin: 0 auto;
     min-width: 134px;
     padding: 12px 34px;
-    text-align: center;
+
     @include text-design(600, 12px, calc(15 / 12), 0.04em);
+    text-align: center;
+
     border: none;
     outline: none;
+
     transition: background-color $main-animation, color $main-animation;
 
     &:hover {
-        border: none;
         background-color: $hover-color;
+        border: none;
     }
 
     &:focus {
-        border: none;
         color: $text-color-light;
         background-color: $hover-color;
+        border: none;
     }
 
     @include media-screen(768px) {

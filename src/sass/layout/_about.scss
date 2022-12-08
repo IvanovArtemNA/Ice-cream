@@ -38,9 +38,9 @@
     background-size: contain;
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('../images/about/about_sm@2x.png');
     }
 
@@ -53,11 +53,10 @@
         background-image: url(../images/about/about_md.png);
         background-position: 0 0;
 
-
         @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
             background-image: url('../images/about/about_md@2x.png');
         }
     }
@@ -71,11 +70,10 @@
         background-image: url(../images/about/about_lg.png);
         background-position: 0 0;
 
-
         @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
             background-image: url('../images/about/about_lg@2x.png');
         }
     }
@@ -130,5 +128,6 @@
     position: absolute;
     top: 15px;
     left: 122px;
+
     margin-right: 5px;
 }

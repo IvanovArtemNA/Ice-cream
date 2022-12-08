@@ -6,11 +6,13 @@ html {
 
 body {
     font-family: $font-family-main;
-    color: $text-color-dark;
     letter-spacing: 0.04em;
-    overflow-x: hidden;
+
+    color: $text-color-dark;
     background-image: url('../images/background/background_hr.png');
     background-size: contain;
+
+    overflow-x: hidden;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/background/background_hr@2x.png');
@@ -30,5 +32,6 @@ p {
 ul {
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
