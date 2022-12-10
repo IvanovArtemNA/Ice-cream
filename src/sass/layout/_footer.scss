@@ -1,5 +1,6 @@
 .section-footer {
     padding-bottom: 62px;
+
     background-color: $main-background-color;
 
     @media screen and (min-width: 768px) {
@@ -18,6 +19,7 @@
 .slogan-call-box {
     display: flex;
     flex-direction: column;
+
     color: $text-color-light;
 
     @media screen and (min-width: 768px) {
@@ -31,33 +33,38 @@
     text-transform: uppercase;
 }
 .slogan-text--small {
-    font-size: 18px;
-    line-height: 22px;
     max-width: 320px;
 
+    font-size: 18px;
+    line-height: 22px;
+
     @media screen and (min-width: 768px) {
+        max-width: 352px;
+
         font-size: 26px;
         line-height: 32px;
-        max-width: 352px;
     }
 
     @media screen and (min-width: 1200px) {
+        max-width: 504px;
+
         font-size: 30px;
         font-weight: 400;
-        max-width: 504px;
     }
 }
 .slogan-text--big {
+    max-width: 200px;
     margin-top: 16px;
+
     font-size: 34px;
     line-height: 1.2;
     font-weight: 700;
-    max-width: 200px;
 
     @media screen and (min-width: 768px) {
-        font-size: 48px;
         margin-top: 9px;
         max-width: 340px;
+
+        font-size: 48px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -87,6 +94,7 @@
 .networks-list__item {
     width: 32px;
     height: 32px;
+
     @media screen and (min-width: 768px) {
         width: 34px;
         height: 34px;
@@ -96,7 +104,9 @@
     display: block;
     width: 100%;
     height: 100%;
+
     color: $main-background-color;
+
     transition: color $main-animation;
 
     &:hover,
@@ -115,7 +125,6 @@
     display: flex;
     justify-content: end;
     text-align: end;
-
     margin-right: 0;
     margin-top: 39px;
 
@@ -136,14 +145,18 @@
     }
 }
 .call__text {
-    color: $text-color-dark;
     font-weight: 700;
+
+    color: $text-color-dark;
 }
+
 .call__link {
-    font-family: $font-family-additional;
     color: $text-color-light;
+
+    font-family: $font-family-additional;
     font-weight: 500;
     text-decoration: none;
+
     transition: color 250ms;
 
     &:hover,
@@ -154,25 +167,30 @@
 }
 .underfooter {
     position: relative;
+
     display: flex;
     justify-content: center;
     max-width: 280px;
     margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
+
     color: #7a7a7a;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
 
     &::after {
         content: '';
-        display: inline-block;
         position: absolute;
-        width: 100vw;
-        border-bottom: 1px solid #e1e1e1;
         bottom: 58px;
+
+        display: inline-block;
+        width: 100vw;
+
+        border-bottom: 1px solid #e1e1e1;
 
         @media screen and (min-width: 768px) {
             bottom: 40px;
@@ -180,8 +198,10 @@
 
         @media screen and (min-width: 1200px) {
             content: '';
+
             display: inline-block;
             width: calc(100vw - 4%);
+
             border-bottom: 1px solid #e1e1e1;
             bottom: 36px;
         }
@@ -190,8 +210,10 @@
         max-width: 100%;
         margin-top: 46px;
     }
+
     @media screen and (min-width: 1200px) {
         margin-top: 66px;
+
         font-size: 12px;
         line-height: 1.9;
     }
