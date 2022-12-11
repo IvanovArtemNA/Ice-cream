@@ -123,6 +123,22 @@
     }
 }
 
+.about__button {
+    position: relative;
+
+    display: flex;
+    width: 164px;
+    margin-top: 16px;
+    margin: 0 auto;
+
+    line-height: 1.28;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
+
 .about__icon {
     position: absolute;
     top: 15px;
