@@ -23,35 +23,6 @@ nav {
     }
 }
 
-// .button__menu {
-//     z-index: 3;
-//     border: transparent;
-//     background-color: transparent;
-//     margin-left: auto;
-//     padding: 0;
-
-//     @media screen and (min-width: 1200px) {
-//         display: none;
-//     }
-// }
-// .button__menu-open {
-//     opacity: 1;
-//     transition: 300ms;
-
-//     .button__menu.is-open & {
-//         opacity: 0;
-//     }
-// }
-
-// .button__menu-close {
-//     opacity: 0;
-//     transition: 300ms;
-
-//     .button__menu.is-open & {
-//         opacity: 1;
-//     }
-// }
-
 .company__logo {
     width: 40px;
     height: 37px;
@@ -69,16 +40,19 @@ nav {
 
 .nav__body {
     @media screen and (max-width: 1199px) {
-        z-index: 2;
-        background-color: $main-background-color;
         position: fixed;
-        transform: translateX(100%);
         top: 0;
         left: 0;
+        transform: translateX(100%);
+        z-index: 2;
+
         width: 100%;
         height: 100%;
-        transition: transform $main-animation;
         padding: 100px 22px 0px 23px;
+
+        background-color: $main-background-color;
+
+        transition: transform $main-animation;
 
         &.is-open {
             transform: translateX(0);
@@ -94,8 +68,8 @@ nav {
     }
 
     @media screen and (min-width: 1200px) {
-        align-items: center;
         display: flex;
+        align-items: center;
         margin-left: auto;
     }
 }
@@ -113,12 +87,15 @@ nav {
 }
 
 .nav__link {
-    color: $text-color-light;
     display: flex;
-    text-decoration: none;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
+    text-decoration: none;
+
+    color: $text-color-light;
+
     transition: color $main-animation;
 
     &:hover {
@@ -157,31 +134,27 @@ nav {
 .nav__button-buy {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    outline: transparent;
-    border: none;
-    background-color: $accent-color;
-    border-radius: 10px;
-
+    margin: 0 auto;
     padding: 12px 34px;
 
-    color: $text-color-dark;
     font-weight: 600;
     line-height: 1.21;
+
+    color: $text-color-dark;
+    background-color: $accent-color;
+    border-radius: 10px;
+    border: none;
+    outline: transparent;
 
     transition: color $main-animation, background-color $main-animation;
 
     cursor: url('../images/cursor.svg'), auto;
 
-    &:hover {
-        background-color: $hover-color;
-    }
-
+    &:hover,
     &:focus {
-        background-color: $hover-color;
         color: $text-color-light;
         fill: $text-color-light;
+        background-color: $hover-color;
     }
 
     @media screen and (max-width: 1199px) {
@@ -201,27 +174,23 @@ nav {
     display: none;
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    outline: transparent;
-    border: none;
-    background-color: $accent-color;
-    border-radius: 10px;
-
+    margin: 0 auto;
     padding: 12px 34px;
 
-    color: $text-color-dark;
     font-weight: 600;
     line-height: 1.21;
+
+    color: $text-color-dark;
+    background-color: $accent-color;
+    border-radius: 10px;
+    border: none;
+    outline: transparent;
 
     transition: color $main-animation, background-color $main-animation;
 
     cursor: url('../images/cursor.svg'), auto;
 
-    &:hover {
-        background-color: $hover-color;
-    }
-
+    &:hover,
     &:focus {
         background-color: $hover-color;
         color: $text-color-light;
@@ -244,6 +213,7 @@ nav {
 
 .nav__buy-body {
     display: none;
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: block;
     }
@@ -267,6 +237,7 @@ nav {
 
     @media screen and (min-width: 768px) {
         top: 330px;
+
         width: 568px;
         height: 644px;
         padding: 32px 54px;
@@ -278,14 +249,16 @@ nav {
 }
 
 .modal__close-button {
-    background-color: transparent;
-    border: none;
     position: absolute;
     top: 20px;
     right: 20px;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
+    background-color: transparent;
+    border: none;
     outline: none;
 
     &:focus {
@@ -300,6 +273,7 @@ nav {
 
 .modal__close-icon {
     transition: fill $main-animation;
+
     &:hover {
         fill: $accent-color;
     }
@@ -315,14 +289,17 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
+
     font-family: $font-family-secondary;
     font-size: 20px;
     line-height: 1.4;
+
     color: $text-color-dark;
 }
 
 .modal__form-field {
     position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,24 +328,26 @@ nav {
 
 .modal__form-input {
     position: relative;
-    outline: transparent;
-    width: 100%;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid $main-background-color;
-    border-radius: 10px;
+
     min-height: 42px;
     padding: 11px 0px 11px 16px;
     width: 368px;
 
-    @media screen and (max-width: 767px) {
-        width: 224px;
-        font-size: 12px;
-        line-height: 1.42;
-        padding: 8px 12px 7px 12px;
-        min-height: 32px;
-    }
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid $main-background-color;
+    border-radius: 10px;
+    outline: transparent;
 
     transition: border-color $main-animation;
+
+    @media screen and (max-width: 767px) {
+        width: 224px;
+        padding: 8px 12px 7px 12px;
+        min-height: 32px;
+
+        font-size: 12px;
+        line-height: 1.42;
+    }
 
     &::placeholder {
         color: $text-color-dark;
@@ -381,21 +360,21 @@ nav {
 }
 
 .modal__form-textarea {
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid $main-background-color;
-    border-radius: 10px;
+    height: 84px;
+    width: 368px;
+    padding: 11px 0px 11px 16px;
 
     line-height: 1.43;
     color: $text-color-dark;
 
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid $main-background-color;
+    border-radius: 10px;
     outline: transparent;
-    width: 100%;
-    height: 84px;
-    padding: 11px 0px 11px 16px;
-
-    width: 368px;
 
     transition: border-color $main-animation;
+
+    resize: none;
 
     &:hover,
     &:focus {
@@ -405,11 +384,10 @@ nav {
     @media screen and (max-width: 767px) {
         width: 100%;
         height: 65px;
-        font-size: 12px;
         padding: 8px 0px 38px 12px;
-    }
 
-    resize: none;
+        font-size: 12px;
+    }
 
     &::placeholder {
         color: $text-color-dark;
@@ -417,27 +395,25 @@ nav {
 }
 
 .modal__submit-button {
+    padding: 12px 34px;
+
     font-family: $font-family-main;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    color: $text-color-dark;
 
+    color: $text-color-dark;
     background: $accent-color;
     border-radius: 10px;
-    padding: 12px 34px;
     border: none;
     outline: transparent;
 
     transition: color $main-animation, background-color $main-animation;
 
-    &:hover {
-        background-color: $hover-color;
-    }
-
+    &:hover,
     &:focus {
-        background-color: $hover-color;
         color: $text-color-light;
+        background-color: $hover-color;
     }
 
     @media screen and (max-width: 767px) {
@@ -455,15 +431,17 @@ nav {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+
     color: green;
 }
 
 .modal__input-icon {
-    transition: fill $main-animation;
-
     position: absolute;
     bottom: 11px;
     left: 12px;
+
+    transition: fill $main-animation;
+
     pointer-events: none;
 
     .modal__form-field:hover & {
@@ -487,17 +465,18 @@ nav {
 }
 
 .modal__image-button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.43;
-    letter-spacing: 0.04em;
-    color: $text-color-dark;
-    background-color: $text-color-light;
     padding: 95px 0px 20px 0px;
     margin-bottom: 40px;
     width: 132px;
     height: 135px;
 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.43;
+    letter-spacing: 0.04em;
+
+    color: $text-color-dark;
+    background-color: $text-color-light;
     border: 2px solid;
     border-radius: 16px;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
@@ -505,11 +484,13 @@ nav {
     transition: background-color $main-animation;
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 }
 
 .modal__image-button--green {
+    border-color: $modal__card-green;
+
     &::before {
         content: '';
         position: absolute;
@@ -519,7 +500,6 @@ nav {
 
         width: 130px;
         height: 130px;
-        border-radius: 50%;
 
         background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
             #aec6a5;
@@ -528,13 +508,12 @@ nav {
         background-position: 0 -7px;
         background-repeat: no-repeat;
         background-size: cover;
+        border-radius: 50%;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url(../images/header/ice-cream-icon@2x.png);
         }
     }
-
-    border-color: $modal__card-green;
 
     &:hover,
     &:focus {
@@ -544,6 +523,8 @@ nav {
 }
 
 .modal__image-button--yellow {
+    border-color: #efd478;
+
     &::before {
         content: '';
         position: absolute;
@@ -553,7 +534,6 @@ nav {
 
         width: 130px;
         height: 130px;
-        border-radius: 50%;
 
         background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #efd478;
         box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
@@ -561,13 +541,12 @@ nav {
         background-position: 0 -7px;
         background-repeat: no-repeat;
         background-size: cover;
+        border-radius: 50%;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url(../images/header/ice-coffee-icon@2x.png);
         }
     }
-
-    border-color: #efd478;
 
     &:hover,
     &:focus {
@@ -577,6 +556,8 @@ nav {
 }
 
 .modal__image-button--brown {
+    border-color: #d6936d;
+
     &::before {
         content: '';
         position: absolute;
@@ -586,7 +567,6 @@ nav {
 
         width: 130px;
         height: 130px;
-        border-radius: 50%;
 
         background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)) #d6936d;
         box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
@@ -594,13 +574,12 @@ nav {
         background-position: 0 -7px;
         background-repeat: no-repeat;
         background-size: cover;
+        border-radius: 50%;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url(../images/header/ice-milkshake-icon@2x.png);
         }
     }
-
-    border-color: #d6936d;
 
     &:hover,
     &:focus {
@@ -613,15 +592,15 @@ nav {
 
 #scroll-up {
     position: fixed;
-
-    z-index: 100;
     bottom: 25px;
     right: 17px;
+    z-index: 100;
+
+    padding: 10px;
 
     background-color: $main-background-color;
-    padding: 10px;
-    border-radius: 50%;
     border: 2px solid $accent-color;
+    border-radius: 50%;
 
     transition: opacity $main-animation;
 
@@ -647,12 +626,15 @@ nav {
 //ГАМБУРГЕР
 
 .hamburger.hamburger--elastic {
-    margin-left: auto;
-    cursor: url('../images/cursor.svg'), auto;
     z-index: 3;
+
+    margin-left: auto;
+
     outline: transparent;
 
     transition: scale 500ms;
+
+    cursor: url('../images/cursor.svg'), auto;
 
     &:hover,
     &:focus {
