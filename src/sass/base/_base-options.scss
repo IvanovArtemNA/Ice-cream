@@ -4,6 +4,16 @@ html {
     cursor: url('../images/cursor.svg'), auto;
 }
 
+a,
+svg,
+button {
+    cursor: url('../images/cursor.svg'), auto;
+
+    &:hover {
+        cursor: url('../images/cursor.svg'), auto;
+    }
+}
+
 body {
     font-family: $font-family-main;
     letter-spacing: 0.04em;

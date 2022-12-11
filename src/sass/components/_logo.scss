@@ -1,13 +1,20 @@
-.company__logo {
+.company__logo-link {
+    outline: transparent;
+}
+
+.company__logo-pic {
     z-index: 3;
 
     width: 40px;
+    height: 37px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 48px;
+        height: 44px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 60px;
+        height: 65px;
     }
 }

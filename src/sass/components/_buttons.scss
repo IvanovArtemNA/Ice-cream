@@ -1,47 +1,32 @@
-a {
-    cursor: url('../images/cursor.svg'), auto;
-
-    &:hover {
-        cursor: url('../images/cursor.svg'), auto;
-    }
-}
-
-button {
-    cursor: url('../images/cursor.svg'), auto;
-}
-
 .button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    padding: 12px 34px;
 
     font-family: $font-family-main;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    text-align: center;
+
     line-height: calc(18 / 14);
     text-decoration: none;
 
-    color: #131313;
-    background: #f8d24e;
-    border-radius: 10px;
-}
-
-.botton--header {
-    line-height: 17px;
-}
-
-.botton--transparent {
     color: $text-color-dark;
-    border-color: #f8d24e;
-    background-color: transparent;
-    background: $accent-color;
+    background-color: $accent-color;
+    border: none;
     border-radius: 10px;
+    outline: transparent;
 
-    transition: color $main-animation, border $main-animation;
+    transition: color $main-animation, background-color $main-animation;
+
+    &:hover {
+        background-color: $hover-color;
+    }
 
     &:focus {
+        background-color: $hover-color;
         color: $text-color-light;
+        fill: $text-color-light;
     }
 }
 
@@ -49,30 +34,11 @@ button {
     position: relative;
 
     display: flex;
-    align-items: center;
     width: 164px;
-    padding: 12px 34px 12px 34px;
     margin-top: 16px;
     margin: 0 auto;
 
-    font-size: 14px;
     line-height: 1.28;
-
-    border: none;
-    outline: none;
-
-    transition: color $main-animation, background-color $main-animation;
-
-    &:hover {
-        border: none;
-        background-color: $hover-color;
-    }
-
-    &:focus {
-        border: none;
-        color: $text-color-light;
-        background-color: $hover-color;
-    }
 
     @media screen and (min-width: 768px) {
         margin-left: 0;
@@ -80,68 +46,39 @@ button {
     }
 }
 
-.button--no-border {
-    padding: 7px 12px;
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
-    font-size: 8px;
-    line-height: 1.25;
-    text-decoration: underline;
-
-    color: $accent-color;
-    border: none;
-    background-color: transparent;
-
-    &:hover {
-        color: $hover-color;
-    }
-}
-
-.button--header {
-    line-height: 17px;
-}
-
-.button--transparent {
-    padding: 7px 12px;
-
-    font-size: 8px;
-    line-height: 1.25;
-
-    border-color: $accent-color;
-    background-color: transparent;
-    border: 2px solid $accent-color;
-
-    &:hover {
-        border: 2px solid $hover-color;
-    }
-
-    &:focus {
-        border: 2px solid $hover-color;
-    }
-}
-
-.button__burger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
-    margin-left: auto;
 
     background-color: transparent;
-    border: none;
-    outline: none;
+    border: transparent;
+    outline: transparent;
 
-    @media screen and (min-width: 1200px) {
-        display: none;
+    transition: fill $main-animation;
+
+    @include media-screen(768px) {
+        top: 20px;
+        right: 20px;
     }
 
-    .button__burger--close {
-        display: none;
+    &:hover,
+    &:focus {
+        fill: $accent-color;
     }
 }
 
-.button__burger.is-open {
-    & .button__burger--close {
-        display: block;
-    }
+.close-icon {
+    width: 16px;
+    height: 16px;
 
-    & .button__burger--open {
-        display: none;
+    @include media-screen(768px) {
+        width: 20px;
+        height: 20px;
     }
 }
