@@ -3,9 +3,11 @@
 }
 
 .hero {
+    position: relative;
+
     padding-top: 61px;
     padding-bottom: 239px;
-    position: relative;
+
     overflow: hidden;
 
     @media screen and (max-width: 767px) {
@@ -24,25 +26,29 @@
 }
 
 .hero__title {
-    color: $text-color-light;
+    margin-bottom: 32px;
+
     font-family: $font-family-secondary;
     font-size: 26px;
     line-height: 1.27;
     font-weight: normal;
-    margin-bottom: 32px;
+
+    color: $text-color-light;
 
     @media screen and (min-width: 768px) {
-        font-size: 18px;
-        line-height: 1.28;
         max-width: 181px;
         margin-bottom: 20px;
+
+        font-size: 18px;
+        line-height: 1.28;
     }
 
     @media screen and (min-width: 1200px) {
-        font-size: 38px;
-        line-height: 1.26;
         max-width: 367px;
         margin-bottom: 28px;
+
+        font-size: 38px;
+        line-height: 1.26;
     }
 }
 
@@ -73,20 +79,24 @@
 }
 
 .hero__button-products {
-    text-decoration: none;
     padding: 7px 12px;
-    color: $text-color-dark;
+
     font-size: 8px;
     line-height: 1.25;
     font-weight: 600;
+    text-decoration: none;
+
+    color: $text-color-dark;
+
+    background-color: transparent;
     border: 2px solid $accent-color;
     border-radius: 10px;
-    background-color: transparent;
 
     transition: color $main-animation, border $main-animation;
 
     @media screen and (min-width: 1200px) {
         padding: 12px 34px;
+
         font-size: 14px;
         line-height: 1.29;
     }
@@ -96,25 +106,30 @@
     }
 
     &:focus {
-        border: 2px solid $hover-color;
         color: $text-color-light;
+
+        border: 2px solid $hover-color;
         outline: transparent;
     }
 }
 
 .hero__button-how {
     padding: 7px 12px;
-    color: $accent-color;
+
     font-size: 8px;
     line-height: 1.25;
     font-weight: 600;
-    transition: color $main-animation;
-    border-radius: 10px;
+
+    color: $accent-color;
     background-color: transparent;
+    border-radius: 10px;
     border: none;
+
+    transition: color $main-animation;
 
     @media screen and (min-width: 1200px) {
         padding: 12px 22px;
+
         font-size: 14px;
         line-height: 1.21;
     }
@@ -151,24 +166,29 @@
 }
 
 .hero__text {
-    color: $text-color-light;
-    font-size: 12px;
-    line-height: 1.42;
     max-width: 151px;
     height: auto;
 
+    font-size: 12px;
+    line-height: 1.42;
+
+    color: $text-color-light;
+
     @media screen and (min-width: 1200px) {
-        font-size: 14px;
         max-width: 220px;
+
+        font-size: 14px;
     }
 }
 
 .hero__button-arrow {
-    border: transparent;
-    background-color: transparent;
-    outline: transparent;
     position: absolute;
+
     margin-top: 20px;
+
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
 
     &:hover .hero__button-hov {
         opacity: 1;
@@ -188,10 +208,12 @@
 }
 
 .button-arrow {
-    transition: opacity $main-animation;
     position: absolute;
-    fill: $text-color-light;
     left: 0;
+
+    fill: $text-color-light;
+
+    transition: opacity $main-animation;
 }
 
 .hero__button-simple {
@@ -204,6 +226,7 @@
 
 .hero__button-foc {
     margin-top: -4px;
+
     opacity: 0;
 }
 
@@ -281,10 +304,11 @@
 }
 
 .hero__number-sales {
-    color: $text-color-dark;
     font-weight: 900;
     font-size: 28px;
     line-height: 1.21;
+
+    color: $text-color-dark;
 
     @media screen and (min-width: 1200px) {
         font-size: 46px;
@@ -292,13 +316,16 @@
 }
 
 .hero__text-sales {
-    color: $text-color-light;
-    font-size: 8px;
-    line-height: 1.25;
     display: flex;
     flex-direction: column;
-    text-align: right;
+
     row-gap: 4px;
+
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+
+    color: $text-color-light;
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
